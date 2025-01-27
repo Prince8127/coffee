@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Page</title>
+    <style>
+        /* Resetting margins and paddings */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #87CEFA; /* Light blue background */
+            background-image: url('hosp.jpg'); /* Low-contrast hospital image */
+            background-size: cover;
+            background-blend-mode: lighten;
+        }
+
+        /* Top border design with navigation links */
+        .top-border {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: linear-gradient(to right, #4CAF50, #2196F3, #FF5722);
+            color: white;
+        }
+
+        .top-border a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .top-border a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content styling */
+        .container {
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .header {
+            background-color: rgba(248, 249, 250, 0.8); /* Slightly transparent header */
+            padding: 20px 10px;
+            border-bottom: 3px solid #4CAF50;
+        }
+
+        .header h1 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #555;
+        }
+
+        .content {
+            margin-top: 30px;
+        }
+
+        .doctor-info {
+            margin-top: 60px; /* Shifted below for spacing */
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .patient-image {
+            position: absolute;
+            top: 150px;
+            right: 20px;
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            padding: 10px 0;
+            background: #f8f9fa;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-border">
+        <div>Our Hospital</div>
+        <div>
+            <a href="#contact">Contact</a>
+            <a href="#about">About Us</a>
+            <a href="#timing">Timing</a>
+        </div>
+    </div>
+
+    <div class="header">
+        <h1>Welcome to Our Hospital</h1>
+        <p>Providing exceptional healthcare for over a decade</p>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <h2>Our Doctors and Physicians</h2>
+            <p>Meet our experienced team with more than a decade of expertise in healthcare:</p>
+
+            <div class="doctor-info">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Specialist</th>
+                            <th>Experience</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dr. John Doe</td>
+                            <td>Cardiology</td>
+                            <td>15 Years</td>
+                        </tr>
+                        <tr>
+                            <td>Dr. Jane Smith</td>
+                            <td>Neurology</td>
+                            <td>12 Years</td>
+                        </tr>
+                        <tr>
+                            <td>Dr. Emily White</td>
+                            <td>Pediatrics</td>
+                            <td>10 Years</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <img src="random-patient.jpg" alt="Medical Patient" class="patient-image">
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Our Hospital. All rights reserved.</p>
+    </footer>
+</body>
+</html>
